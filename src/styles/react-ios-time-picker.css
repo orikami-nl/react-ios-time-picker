@@ -46,7 +46,7 @@ input:focus {
    display: flex;
    justify-content: center;
    position: relative;
-   background-color: #1d1d1d;
+   background-color: rgba(0, 0, 0, 0.83);
    width: 220px;
    overflow: hidden;
    /* border-radius: 0 0 15px 17px; */
