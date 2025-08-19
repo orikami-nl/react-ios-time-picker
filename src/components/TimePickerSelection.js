@@ -39,6 +39,10 @@ function TimePickerSelection({
    useEffect(() => {
       if (hourFormat.mount) {
          onAmPmChange(hourFormat.hourFormat);
+         if (controllers === false) {
+            const finalSelectedValue = use12Hours ? `${value} ${hourFormat.hourFormat}` : value;
+            setInputValue(finalSelectedValue);         
+         }
       }
    }, [hourFormat]);
 
